@@ -1,0 +1,2 @@
+document.querySelector('.menu-toggle')?.addEventListener('click',()=>document.querySelector('nav')?.classList.toggle('open'));
+document.getElementById('contactForm')?.addEventListener('submit',e=>{e.preventDefault();const f=new FormData(e.target);const subject=encodeURIComponent('Dance Academy Enquiry — '+f.get('name'));const body=encodeURIComponent('Name: '+f.get('name')+'\nEmail: '+f.get('email')+'\nInterested class: '+f.get('class')+'\n\nMessage:\n'+f.get('message'));window.location.href='mailto:kavitha@chilaboli.com?subject='+subject+'&body='+body;});
